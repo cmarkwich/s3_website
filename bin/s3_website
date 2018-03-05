@@ -210,8 +210,8 @@ end
 
 def resolve_jar(project_root, logger)
   jar_lookup_paths = [
-    project_root + "/s3_website-#{S3Website::VERSION}.jar",
-    (ENV['TMPDIR'] || '/tmp') + "/s3_website-#{S3Website::VERSION}.jar"
+    project_root + "/s3_website.jar",
+    (ENV['TMPDIR'] || '/tmp') + "/s3_website.jar"
   ]
   found_jar = jar_lookup_paths.
     select { |jar_path|
